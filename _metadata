@@ -1,0 +1,9 @@
+{
+  "name" : "ItemScripts",
+  "friendlyName" : "Item Scripts",
+
+  "version" : "1.0",
+  "author" : "Silverfeelin",
+  "description" : "",
+  "includes" : ["ItemInterfaces"]
+}
