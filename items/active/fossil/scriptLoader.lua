@@ -10,7 +10,7 @@ if not scriptPath then
 end
 
 -- Store references
-local i, up, un = init, update, uninit
+local i, up, un, ac = init, update, uninit, activate
 
 -- Check if the file exists.
 if not pcall(function() require(scriptPath) end) then
@@ -26,6 +26,9 @@ if up == update then update = nil end
 
 -- New uninit isn't assigned; disable the uninit callback.
 if un == uninit then uninit = nil end
+
+-- New activate isn't assigned; disable the activate callback.
+if ac == activate then activate = nil end
 
 -- If we reached this part, that means a valid script was loaded.
 itemScript = true
