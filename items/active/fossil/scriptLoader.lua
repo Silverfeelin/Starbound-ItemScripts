@@ -14,7 +14,7 @@ local i, up, un = init, update, uninit
 
 -- Check if the file exists.
 if not pcall(function() require(scriptPath) end) then
-  sb.logError("ItemScript: Could not load the script '%s'.", scriptPath)
+  sb.logWarn("ItemScript: Could not load the script '%s'.", scriptPath)
   return
 end
 
