@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="redist/jquery-3.1.1.min.js"></script>
+  <script src="generate.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+
+      <h1>
+        ItemScripts - Command Generator
+      </h1>
+      Generates a command for your scripted item.
+    </div>
+
+    <br />
+    <div class="row">
+      <label for="item">Item Name</h4>
+      <input id="item" type="text" class="form-control" value="fossilbrushbeginner" placeholder="fossilbrushbeginner">
+    </div>
+    <div class="row">
+      <label for="script">Script Path</h4>
+      <div class="input-group">
+        <input id="script" type="text" class="form-control" value="/scripts/myScript.lua" placeholder="/scripts/myScript.lua">
+        <span class="input-group-btn">
+          <button class="btn btn-success" onclick="generate()">Generate</button>
+        </span>
+      </div>
+    </div>
+
+    <div class="row">
+      <h4>Output</h4>
+      <div class="form-group">
+        <textarea id="output" class="form-control"></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <a href="https://github.com/Silverfeelin/Starbound-ItemScripts">Return to repository</a>
+    </div>
+  </div>
+
+  <script src="redist/bootstrap.min.js"></script>
+  <link href="redist/bootstrap.min.css" rel="stylesheet">
+</body>
+</html>
