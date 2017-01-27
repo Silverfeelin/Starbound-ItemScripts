@@ -1,4 +1,4 @@
-# Starbound-ItemScripts
+# Item Scripts
 Simple structure to allow any number of active items to use their own custom scripts, by having a vanilla script load the custom script (if present). This makes it easy to set up custom items that don't crash other players when they pick up the item.
 
 ## Usage
