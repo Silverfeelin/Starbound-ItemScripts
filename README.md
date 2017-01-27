@@ -53,6 +53,6 @@ As described before, the fossil brush script was modified to use the scriptloade
 You can make other active item scripts use the script loader by adding the below code to the start of the `init` function.
 
 ```lua
-require "/items/active/fossil/scriptLoader.lua"
+require "/scripts/itemScriptLoader.lua"
 if itemScript then return end
 ```

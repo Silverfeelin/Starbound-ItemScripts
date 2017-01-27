@@ -3,7 +3,7 @@ require "/scripts/vec2.lua"
 
 function init()
   -- THIS SECTION CONTAINS ALL MODIFICATIONS TO THE VANILLA SCRIPT:
-  require "/items/active/fossil/scriptLoader.lua"
+  require "/scripts/itemScriptLoader.lua"
   if itemScript then return end
 
   self.idleArmAngle = config.getParameter("idleArmAngle", -1.25)
