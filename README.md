@@ -14,6 +14,8 @@ Simple structure to allow any number of active items to use their own custom scr
 /spawnitem fossilbrushbeginner 1 '{"itemScript":{"script":"/scripts/myScript.lua"}}'
 ```
 
+You can create commands for your own script using the command generator: https://silverfeelin.github.io/Starbound-ItemScripts/.
+
 #### Sample Script
 
 ```lua
