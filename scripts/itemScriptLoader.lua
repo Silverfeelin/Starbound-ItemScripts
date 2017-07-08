@@ -1,5 +1,10 @@
 local scriptPath = config.getParameter("itemScript") and config.getParameter("itemScript.script")
 
+local version = "v1.0"
+local logWarn = function(msg, ...)
+  sb.logWarn("ItemScripts %s: " .. msg, version, ...)
+end
+
 -- Compatibility check for Item Interfaces v1.0.0(+)
 if not scriptPath then
   if config.getParameter("itemInterface") then
@@ -14,7 +19,7 @@ local i, up, un, ac = init, update, uninit, activate
 
 -- Check if the file exists.
 if not pcall(function() require(scriptPath) end) then
-  sb.logWarn("ItemScript: Could not load the script '%s'.", scriptPath)
+  logWarn("Could not load the script '%s'.", scriptPath)
   return
 end
 
